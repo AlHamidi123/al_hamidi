@@ -1,0 +1,387 @@
+[
+  {
+    "category": "Mankoush",
+    "info": {
+      "name": "منقوشة زعتر",
+      "price": "60000"
+    }
+  },
+  {
+    "category": "Mankoush",
+    "info": {
+      "name": "منقوشة جبنة",
+      "price": "120000"
+    }
+  },
+  {
+    "category": "Mankoush",
+    "info": {
+      "name": "منقوشة زعتر وجبنة",
+      "price": "90000"
+    }
+  },
+  {
+    "category": "Mankoush",
+    "info": {
+      "name": "منقوشة أريشة",
+      "price": "100000"
+    }
+  },
+  {
+    "category": "Mankoush",
+    "info": {
+      "name": "منقوشة تركية",
+      "price": "135000"
+    }
+  },
+  {
+    "category": "Mankoush",
+    "info": {
+      "name": "منقوشة لحمة",
+      "price": "135000"
+    }
+  },
+  {
+    "category": "Mankoush",
+    "info": {
+      "name": "كروسان جبنة",
+      "price": "80000"
+    }
+  },
+  {
+    "category": "Mankoush",
+    "info": {
+      "name": "كروسان شوكولا",
+      "price": "80000"
+    }
+  },
+  {
+    "category": "Special Mankoush",
+    "info": {
+      "name": "أريشة و موزريلا",
+      "price": "150000"
+    }
+  },
+  {
+    "category": "Special Mankoush",
+    "info": {
+      "name": "تركية مع سجق",
+      "price": "190000"
+    }
+  },
+  {
+    "category": "Special Mankoush",
+    "info": {
+      "name": "لحمة و موزريلا",
+      "price": "200000"
+    }
+  },
+  {
+    "category": "Special Mankoush",
+    "info": {
+      "name": "جبنة اكسترا موزريلا",
+      "price": "200000"
+    }
+  },
+  {
+    "category": "Special Mankoush",
+    "info": {
+      "name": "جبنة و حبش",
+      "price": "180000"
+    }
+  },
+  {
+    "category": "Special Mankoush",
+    "info": {
+      "name": "جبنة و بيبروني",
+      "price": "180000"
+    }
+  },
+  {
+    "category": "Special Mankoush",
+    "info": {
+      "name": "جبنة و سجق",
+      "price": "180000"
+    }
+  },
+  {
+    "category": "Special Mankoush",
+    "info": {
+      "name": "فاهيتا و موزريلا",
+      "price": "300000"
+    }
+  },
+  {
+    "category": "Kaak",
+    "info": {
+      "name": "كعكة جبنة",
+      "price": "120000"
+    }
+  },
+  {
+    "category": "Kaak",
+    "info": {
+      "name": "كعكة اكسترا موزريلا",
+      "price": "180000"
+    }
+  },
+  {
+    "category": "Kaak",
+    "info": {
+      "name": "كعكة و خضرة",
+      "price": "150000"
+    }
+  },
+  {
+    "category": "Kaak",
+    "info": {
+      "name": "كعكة و ذرة",
+      "price": "150000"
+    }
+  },
+  {
+    "category": "Kaak",
+    "info": {
+      "name": "كعكة و حبش",
+      "price": "150000"
+    }
+  },
+  {
+    "category": "Kaak",
+    "info": {
+      "name": "كعكة و بيبروني",
+      "price": "150000"
+    }
+  },
+  {
+    "category": "Kaak",
+    "info": {
+      "name": "كعكة و سجق",
+      "price": "150000"
+    }
+  },
+  {
+    "category": "Swareh",
+    "info": {
+      "name": "بيتزا",
+      "price": "30000",
+      "dozen": "360000"
+    }
+  },
+  {
+    "category": "Swareh",
+    "info": {
+      "name": "رقاقات جبنة",
+      "price": "40000",
+      "dozen": "480000"
+    }
+  },
+  {
+    "category": "Swareh",
+    "info": {
+      "name": "لحم بعجين صغير",
+      "price": "40000",
+      "dozen": "480000"
+    }
+  },
+  {
+    "category": "Swareh",
+    "info": {
+      "name": "لحم بعجين كبير",
+      "price": "80000",
+      "dozen": "900000"
+    }
+  },
+  {
+    "category": "Swareh",
+    "info": {
+      "name": "فاهيتا",
+      "price": "30000",
+      "dozen": "360000"
+    }
+  },
+  {
+    "category": "Swareh",
+    "info": {
+      "name": "جبنة وبيبروني",
+      "price": "30000",
+      "dozen": "360000"
+    }
+  },
+  {
+    "category": "Swareh",
+    "info": {
+      "name": "تركية",
+      "price": "30000",
+      "dozen": "360000"
+    }
+  },
+  {
+    "category": "Swareh",
+    "info": {
+      "name": "شعيبيات",
+      "price": "30000",
+      "dozen": "360000"
+    }
+  },
+  {
+    "category": "Swareh",
+    "info": {
+      "name": "أوزي",
+      "price": "40000",
+      "dozen": "480000"
+    }
+  },
+  {
+    "category": "Swareh",
+    "info": {
+      "name": "صيداوية",
+      "price": "30000",
+      "dozen": "360000"
+    }
+  },
+  {
+    "category": "Swareh",
+    "info": {
+      "name": "كبة",
+      "price": "25000",
+      "dozen": "300000"
+    }
+  },
+  {
+    "category": "Swareh",
+    "info": {
+      "name": "اريشة",
+      "price": "30000",
+      "dozen": "360000"
+    }
+  },
+  {
+    "category": "Pizza",
+    "info": {
+      "name": "بيتزا صغير",
+      "price": "25000",
+      "type": "خضرة"
+    }
+  },
+  {
+    "category": "Pizza",
+    "info": {
+      "name": "بيتزا وسط",
+      "price": "500000",
+      "type": "خضرة"
+    }
+  },
+  {
+    "category": "Pizza",
+    "info": {
+      "name": "بيتزا كبير",
+      "price": "700000",
+      "type": "خضرة"
+    }
+  },
+  {
+    "category": "Pizza",
+    "info": {
+      "name": "بيتزا عائلي",
+      "price": "900000",
+      "type": "خضرة"
+    }
+  },
+  {
+    "category": "Pizza",
+    "info": {
+      "name": "بيتزا صغير",
+      "price": "30000",
+      "type": "سجق"
+    }
+  },
+  {
+    "category": "Pizza",
+    "info": {
+      "name": "بيتزا وسط",
+      "price": "600000",
+      "type": "سجق"
+    }
+  },
+  {
+    "category": "Pizza",
+    "info": {
+      "name": "بيتزا كبير",
+      "price": "900000",
+      "type": "سجق"
+    }
+  },
+  {
+    "category": "Pizza",
+    "info": {
+      "name": "بيتزا عائلي",
+      "price": "1200000",
+      "type": "سجق"
+    }
+  },
+  {
+    "category": "Pizza",
+    "info": {
+      "name": "بيتزا صغير",
+      "price": "30000",
+      "type": "ببروني"
+    }
+  },
+  {
+    "category": "Pizza",
+    "info": {
+      "name": "بيتزا وسط",
+      "price": "600000",
+      "type": "ببروني"
+    }
+  },
+  {
+    "category": "Pizza",
+    "info": {
+      "name": "بيتزا كبير",
+      "price": "900000",
+      "type": "ببروني"
+    }
+  },
+  {
+    "category": "Pizza",
+    "info": {
+      "name": "بيتزا عائلي",
+      "price": "1200000",
+      "type": "ببروني"
+    }
+  },
+  {
+    "category": "Pizza",
+    "info": {
+      "name": "بيتزا صغير",
+      "price": "30000",
+      "type": "حبش"
+    }
+  },
+  {
+    "category": "Pizza",
+    "info": {
+      "name": "بيتزا وسط",
+      "price": "600000",
+      "type": "حبش"
+    }
+  },
+  {
+    "category": "Pizza",
+    "info": {
+      "name": "بيتزا كبير",
+      "price": "900000",
+      "type": "حبش"
+    }
+  },
+  {
+    "category": "Pizza",
+    "info": {
+      "name": "بيتزا عائلي",
+      "price": "1200000",
+      "type": "حبش"
+    }
+  }
+]
