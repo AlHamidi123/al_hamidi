@@ -4,6 +4,7 @@ fetch('data.json')
     .then(data => {
         // Process the data here
         const container = document.getElementById('menu_element');
+        categories = []
         data.forEach(record => {
             // Process each record here
             category = record.category
@@ -12,20 +13,39 @@ fetch('data.json')
             price = info.price
             dozen = info.dozen
             type = info.type
+            url = info.url 
+            // Category
+            if (!categories.includes(category)){
+                categories += [category]
+                catego_html = `
+                    <div class="container mb-2">
+                        <div class="row">
+                            <div class="col-xl-6 desktop-only"></div>
+                            <div class="col-3">
+                                <h1 class="sub_taital">${category}</h1>
+                            </div>
+                        </div>
+                    </div>
+                                `
+            }
+            else{
+                catego_html =""
+            }
+            // Dozen
             if (dozen !== undefined) {
                 dozen_html = `<span>دزدينة ${dozen} .ل.ل</span>`
-            }else{
+            } else {
                 dozen_html = ''
             }
-            if (type !== undefined) {
-                console.log(type);
-            }else{
+
+            if (category !== 'Pizza') {
                 const htmlCode = `
+                ${catego_html}
                     <div class="container mb-2">
                         <div class="row">
                             <div class="col-xl-3 desktop-only"></div>
                             <div class="col-3">
-                                <img src="images/1.jpg" alt="Your Image" class="image">
+                                <img src=${url} alt="Your Image" class="image">
                             </div>
                             <div class="col-xl-3 col-9 d-flex align-items-center text_wrap">
                                 <div class="div text">
@@ -44,7 +64,7 @@ fetch('data.json')
            
         });
     })
-    .catch(error => {
-        // Handle any errors
-        console.error('Error:', error);
-    });
+    .catch (error => {
+    // Handle any errors
+    console.error('Error:', error);
+});
