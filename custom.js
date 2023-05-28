@@ -8,11 +8,11 @@ fetch('data.json')
         categories = []
         data.forEach(record => {
             category = record.category
-            if (category == 'Special Mankoush'){category='Special'}
-            if (!categories.includes(category)){categories.push(category)}
+            if (category == 'Special Mankoush') { category = 'Special' }
+            if (!categories.includes(category)) { categories.push(category) }
         });
-        categories.forEach(categ =>{
-            const htmlCode =`<li data-filter=".filter-${categ}">${categ}</li>`
+        categories.forEach(categ => {
+            const htmlCode = `<li data-filter=".filter-${categ}">${categ}</li>`
             container2.innerHTML += htmlCode;
         });
         const options = { style: 'decimal' };
@@ -24,29 +24,33 @@ fetch('data.json')
             dozen = info.dozen
             type = info.type
             url = info.url
-            if (category == 'Special Mankoush'){category='Special'}
+            if (category == 'Special Mankoush') { category = 'Special' }
             // Dozen
             if (dozen !== undefined) {
                 dozen_html = `<span>دزدينة ${dozen} .ل.ل</span>`
             } else {
                 dozen_html = ''
             }
-            if (category !== 'Pizza') {
-                const htmlCode = `
+            // Pizza
+            if (type !== undefined) {
+                type_html = `${type}`
+            } else {
+                type_html = ''
+            }
+            const htmlCode = `
                 <div class="col-lg-6 menu-item filter-${category}">
                     <div class="menu-content">
-                        <a href="#">${title}</a><span>${price} .ل.ل</span>
+                        <a href="#">${title} ${type_html}</a><span>${price} .ل.ل</span>
                     </div>
                     <div class="menu-ingredients">
                         ${dozen_html}
                     </div>
                 </div>
                 `;
-                container.innerHTML += htmlCode;
-            }
+            container.innerHTML += htmlCode;
         });
     })
-    .catch (error => {
-    // Handle any errors
-    console.error('Error:', error);
-});
+    .catch(error => {
+        // Handle any errors
+        console.error('Error:', error);
+    });

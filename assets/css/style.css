@@ -906,15 +906,15 @@ section {
 
 .menu .menu-content a {
   padding-right: 10px;
-  background: #fff;
+  /* background: #fff; */
   position: relative;
   z-index: 3;
   font-weight: 700;
-  color: #ff9b08;
+  /* color: #ff9b08; */
 }
 
 .menu .menu-content span {
-  background: #fff;
+  /* background: #fff; */
   position: relative;
   z-index: 3;
   padding: 0 10px;
