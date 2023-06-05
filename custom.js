@@ -3,16 +3,10 @@ fetch('data.json')
     .then(response => response.json())
     .then(data => {
         // Process the data here
-        const container = document.getElementById('menu_element');
-        const container2 = document.getElementById('menu-flters');
+        const menu_div = document.getElementById('the_menu_div');
         const options = { style: 'decimal' };
-        categories = []
-        // data.forEach(record => {
-        //     category = record.category
-        //     if (category == 'Special Mankoush') { category = 'Special' }
-        //     if (!categories.includes(category)) { categories.push(category) }
-        // });
-        
+        console.log(menu_div)
+
         data.forEach(record => {
             category = record.category
             info = record.info
@@ -21,9 +15,6 @@ fetch('data.json')
             dozen = info.dozen
             type = info.type
             url = info.url
-            // Category array
-            if (category == 'Special Mankoush') { category = 'Special' }
-            if (!categories.includes(category)) { categories.push(category) }
             if (category == 'Special Mankoush') { category = 'Special' }
             // Dozen
             if (dozen !== undefined) {
@@ -47,11 +38,7 @@ fetch('data.json')
                     </div>
                 </div>
                 `;
-            container.innerHTML += htmlCode;
-        });
-        categories.forEach(categ => {
-            const htmlCode = `<li data-filter=".filter-${categ}">${categ}</li>`
-            container2.innerHTML += htmlCode;
+            menu_div.innerHTML += htmlCode;
         });
     })
     .catch(error => {
