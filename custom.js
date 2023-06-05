@@ -5,7 +5,6 @@ fetch('data.json')
         // Process the data here
         const menu_div = document.getElementById('my_menu');
         const options = { style: 'decimal' };
-        const htmlCode = ""
 
         data.forEach(record => {
             category = record.category
@@ -14,6 +13,7 @@ fetch('data.json')
             price = parseInt(info.price).toLocaleString('en-US', options);
             dozen = info.dozen
             type = info.type
+            url = info.url
             if (category == 'Special Mankoush') { category = 'Special' }
             // Dozen
             if (dozen !== undefined) {
@@ -27,16 +27,18 @@ fetch('data.json')
             } else {
                 type_html = ''
             }
-            htmlCode += '<div class="col-lg-6 menu-item filter-'+category+'">'
-                    '<div class="menu-content">'
-                        '<a href="#">'+title+' '+type_html+'</a><span>'+price+'.ل.ل</span>'
-                    '</div>'
-                    '<div class="menu-ingredients">'
-                        +dozen_html+
-                    '</div>'
-                '</div>';
-            });
-        menu_div.innerHTML = htmlCode;
+            const htmlCode = `
+                <div class="col-lg-6 menu-item filter-${category}">
+                    <div class="menu-content">
+                        <a href="#">${title} ${type_html}</a><span>${price} .ل.ل</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        ${dozen_html}
+                    </div>
+                </div>
+                `;
+            menu_div.innerHTML += htmlCode;
+        });
     })
     .catch(error => {
         // Handle any errors
