@@ -34,7 +34,7 @@ fetch('data.json')
                         <a href="${url}" class="glightbox">
                         <img src="${url}" class="menu-img img-fluid" style="border-radius:50%;" alt="">
                         </a>
-                        <h4>${title}</h4>
+                        <h4>${title} ${type_html}</h4>
                         <p class="price">
                         ${price} ل.ل.
                         </p>
