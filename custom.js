@@ -3,21 +3,23 @@ fetch('data.json')
     .then(response => response.json())
     .then(data => {
         // Process the data here
-        const menu_div = document.getElementById('my_menu');
+        // const menu_div = document.getElementById('my_menu');
         const options = { style: 'decimal' };
-
+        categ = []
         data.forEach(record => {
             category = record.category
             info = record.info
             title = info.name
-            price = parseInt(info.price).toLocaleString('en-US', options);
             dozen = info.dozen
             type = info.type
             url = info.url
+            price = parseInt(info.price).toLocaleString('en-US', options);
             if (category == 'Special Mankoush') { category = 'Special' }
+            const menu_div = document.getElementById('menu-' + category);
+            var nestedDiv = menu_div.getElementsByTagName('div')[0];
             // Dozen
             if (dozen !== undefined) {
-                dozen_html = `<span>دزدينة ${dozen} .ل.ل</span>`
+                dozen_html = `<p class="ingredients">دزدينة ${dozen} .ل.ل</p>`
             } else {
                 dozen_html = ''
             }
@@ -27,17 +29,19 @@ fetch('data.json')
             } else {
                 type_html = ''
             }
-            const htmlCode = `
-                <div class="col-lg-6 menu-item filter-${category}">
-                    <div class="menu-content">
-                        <a href="#">${title} ${type_html}</a><span>${price} .ل.ل</span>
-                    </div>
-                    <div class="menu-ingredients">
+            var htmlCode = `
+                <div class="col-lg-4 menu-item">
+                        <a href="${url}" class="glightbox">
+                        <img src="${url}" class="menu-img img-fluid" style="border-radius:50%;" alt="">
+                        </a>
+                        <h4>${title}</h4>
+                        <p class="price">
+                        ${price} ل.ل.
+                        </p>
                         ${dozen_html}
-                    </div>
-                </div>
-                `;
-            menu_div.innerHTML += htmlCode;
+                        </div>`;
+
+            nestedDiv.innerHTML += htmlCode;
         });
     })
     .catch(error => {
